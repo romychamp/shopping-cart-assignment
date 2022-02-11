@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is the login page of Sab Ka Bazaar"
+    />
+    <link rel="stylesheet" href="../../styles/css/login.css" />
+    <title>Login Sab Ka Bazaar</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <div>
+        <img
+          src="../../../static/images/logo.png"
+          alt=""
+          width="300px"
+          height="auto"
+          class="logo-img"
+        />
+      </div>
+      <div class="create-account">
+        <h5>Don't have an account?</h5>
+        <a href="../registerPage/register.html" class="register-link"
+          >Create Account</a
+        >
+        <h4><a href="../../homePage/home.html">Back Home!</a></h4>
+      </div>
+      <div class="offer-of-today">
+        <div class="offers">
+          <h4 class="new-acc-offer">
+            New Accounts created today will get a whopping 50%off
+          </h4>
+          <h4 class="reff-offer">Referrals will give you 40%off</h4>
+        </div>
+      </div>
+    </div>
+
+    <!--end of nav bar here-->
+
+    <div class="login-form-div">
+      <div class="static-info">
+        <h1>LogIn</h1>
+        <p class="margin-y-t-3">
+          Get access to your Orders, Wishlist and Recommendations
+        </p>
+      </div>
+      <div class="login-input">
+        <form onsubmit="event.preventDefault()" class="form-inputs">
+          <div class="form-element">
+            <label for="email" class="control-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+          <div class="form-element">
+            <label for="password" class="control-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-element">
+            <button
+              onclick="window.location.href=`../../homePage/home.html`"
+              class="app-btn submit-btn"
+            >
+              LogIn
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="login-footer">
+        <em>Copyright © 2019-2021 Sabka Bazaar Grocery Supplies Pvt Ltd</em>
+      </div>
+    </footer>
+    <script src="../login.js"></script>
+  </body>
+</html>
